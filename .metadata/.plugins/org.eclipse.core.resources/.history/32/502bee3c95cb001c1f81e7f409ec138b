@@ -1,0 +1,22 @@
+package dsa.day1;
+
+import java.util.Arrays;
+
+public class Day2 {
+
+	public static void main(String[] args) {
+		new Day2().rotate(new int[] {1,2,3,4,5,6,7},3);
+
+	}
+
+	public void rotate(int[] nums, int k) {
+		int[] rotate_nums = new int[nums.length];
+
+        
+        for(int j=0;j<nums.length;j++){
+            rotate_nums[j]=nums[(j+k)%nums.length];
+         }
+        
+        System.out.println(Arrays.toString(rotate_nums));
+		}
+	}

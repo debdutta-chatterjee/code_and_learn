@@ -1,0 +1,20 @@
+package dsa.day1;
+
+import java.util.Arrays;
+
+public class Day1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public int[] sortedSquares(int[] nums) {
+		for(int index=0;index<nums.length;index++){
+            nums[index]= nums[index]*nums[index];
+        }
+        Arrays.sort(nums);
+        return nums;
+	}
+	
+}
